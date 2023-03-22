@@ -1,0 +1,11 @@
+name: project_workspace
+description: Workspace for the project apps and realated packages
+
+publish_to: none
+version: 1.0.0
+
+environment:
+  sdk: '>=2.19.0 <3.0.0'
+
+dev_dependencies:
+  melos: ^3.0.0

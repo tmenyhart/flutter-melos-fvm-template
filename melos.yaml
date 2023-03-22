@@ -1,0 +1,27 @@
+name: project_workspace
+
+sdkPath: .fvm/flutter_sdk
+
+packages:
+  - app/**
+  - package/**
+
+scripts:
+  get:
+    exec: flutter pub get
+
+  analyze:
+    exec: dart analyze
+      
+  test:
+    exec: flutter test --no-pub --coverage
+      
+  outdated:
+    exec: flutter pub outdated
+
+  upgrade:
+    exec: flutter pub upgrade
+
+command:
+  bootstrap:
+    usePubspecOverrides: true 
