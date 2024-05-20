@@ -11,19 +11,16 @@ scripts:
     exec: dart analyze
       
   test:
-    exec: flutter test --no-pub --coverage
-
-  get:
-    exec: flutter pub get
-      
-  outdated:
-    exec: flutter pub outdated
-
-  upgrade:
-    exec: flutter pub upgrade
+    run: melos exec -c 1  -- "flutter test --no-pub --coverage"
 
   clean:
-    exec: flutter clean
+    run: melos exec -c 1  -- "flutter clean"
 
-  doctor:
-    exec: flutter doctor
+  get:
+    run: melos exec -c 1  -- "flutter pub get"
+      
+  outdated:
+    run: melos exec -c 1  -- "flutter pub outdated"
+
+  upgrade:
+    run: melos exec -c 1  -- "flutter pub upgrade"
