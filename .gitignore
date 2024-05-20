@@ -1,11 +1,5 @@
-# Dart/Pub related
-.dart_tool/
-.pub-cache/
-.pub/
+.dart_tool
+.fvm
+.idea
 
-# FVM
-.fvm/flutter_sdk
-
-# Melos IntelliJ Idea related
-.idea/
-melos_project_workspace.iml
+*.iml
