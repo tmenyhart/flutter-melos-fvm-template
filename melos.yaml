@@ -7,21 +7,20 @@ packages:
   - package/**
 
 scripts:
-  get:
-    exec: flutter pub get
-
   analyze:
     exec: dart analyze
       
   test:
-    exec: flutter test --no-pub --coverage
+    run: melos exec -c 1  -- "flutter test --no-pub --coverage"
+
+  clean:
+    run: melos exec -c 1  -- "flutter clean"
+
+  get:
+    run: melos exec -c 1  -- "flutter pub get"
       
   outdated:
-    exec: flutter pub outdated
+    run: melos exec -c 1  -- "flutter pub outdated"
 
   upgrade:
-    exec: flutter pub upgrade
-
-command:
-  bootstrap:
-    usePubspecOverrides: true 
+    run: melos exec -c 1  -- "flutter pub upgrade"

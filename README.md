@@ -20,13 +20,13 @@ Workspace for the project apps and related packages.
 
 Install specified Flutter version
 ```sh
-fvm use --force
+fvm use
 fvm flutter doctor
 ```
 
 Update used Flutter version
 ```sh
-fvm use x.y.z --force
+fvm use x.y.z
 fvm flutter doctor
 ```
 
